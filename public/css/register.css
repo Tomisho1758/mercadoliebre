@@ -1,0 +1,582 @@
+/* Estilo base para el header */
+/* Estilo base para la sección de intereses */
+h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interests div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media query para pantallas pequeñas (modo celular) */
+@media (min-width: 0px) and (max-width: 360px) {
+    .interests div {
+        flex-basis: 100%; /* Establece el ancho al 100% para apilar en pantallas pequeñas */
+    }
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+/* Estilo para el footer */
+.icono {
+    font-size: 30px;
+    color: #1259c3;
+}
+
+.h4footer {
+    color: #2d2d2d;
+}
+
+.pfooter {
+    color: rgb(45, 45, 45);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* Estilo específico para la página de registro */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main.register {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 75px;
+    margin-top: 7px;
+    border-top: #000;
+}
+
+main.register form {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right: 400px;
+    margin-top:65px;
+    border-style: calc() ;
+}
+
+main.register input {
+    width: 60%;
+    margin-left: 550px;
+    margin-right: 500px;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+main.register label {
+    margin-top: 10px;
+}
+
+main.register .profile,
+main.register .interests {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+main.register .profile input,
+main.register .interests div {
+    margin-right: 10px;
+}
+
+/* Estilo para la sección de intereses */
+main.register .interests div label {
+    margin-left: 5px;
+}
+
+/* Estilo para la sección de foto de usuario */
+main.register h4 {
+    margin-top: 20px;
+}
+
+main.register input[type="file"] {
+    margin-top: 10px;
+}
+
+main.register input[type="submit"],
+main.register input[type="reset"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1259c3;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+/* Estilo para el burger menu */
+.burger-menu {
+    text-align: center;
+    display: none; /* Para ocultar el burger menu por defecto */
+}
+
+/* Media query para pantalla pequeña (modo celular) */
+@media (max-width: 767px) {
+    nav ul {
+        display: none; /* Oculta los elementos de la lista en modo celular */
+    }
+
+    .burger-menu {
+        display: block; /* Muestra el burger menu en modo celular */
+    }
+}
+@media (min-width: 0px) and (max-width:360px){
+
+    div.top-header{
+        flex-wrap: wrap;
+    }
+  nav{
+    display: none;
+  }
+  header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+   
+  }
+  @media (min-width: 361px) {
+   
+  
+    header div.burger-menu {
+      display: none;
+    }
+  
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+     
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  
+  nav ul li {
+    margin-right: 20px; 
+  }
+  
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 0px) and (max-width:360px){
+
+    div.top-header{
+        flex-wrap: wrap;
+    }
+  nav{
+    display: none;
+  }
+  header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+    main section article .description {
+      display: none;
+    }
+
+    .fa-solid.fa-truck {
+      right: 240px;
+    }
+
+    .discount {
+      display: block;
+      width: 100%;
+      height: 100px;
+    }
+  }
+  @media (min-width: 361px) {
+    nav ul {
+        flex-direction: column; /* Acomoda los elementos uno arriba del otro */
+    }
+    main section article .description {
+      display: block;
+    }
+  
+    header div.burger-menu {
+      display: none;
+    }
+  
+    main section article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    main section div.products {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* Allow items to wrap to the next row */
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    main section div.products article {
+      width: calc(50% - 10px); /* Adjusted width to 50%, considering margin */
+      margin-bottom: 10px; /* Added margin at the bottom of each product */
+    }
+  
+    .price,
+    .discount {
+      width: 100%; /* Full width for price and discount */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    nav ul {
+        flex-direction: row; /* Acomoda los elementos uno arriba del otro */
+    }
+    main section div.products article {
+      width: 22%;
+    }
+  
+    main section article .description {
+      display: block;
+    }
+  
+    main section article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    
+      main section div.products article {
+        width: 23%; /* Adjusted width to leave some space between products */
+        margin-bottom: 15px; /* Added margin at the bottom of each product */
+      }
+  
+    .price,
+    .discount {
+      width: 50%;
+    }
+  }
+.icono{
+    font-size: 30px;
+  
+  color: #1259c3;
+  }
+  
+  .h4footer{
+    color:#2d2d2d;
+  
+  }
+  
+  .pfooter{
+    color:rgb(45, 45, 45);
+  
+  }
+  
+  
+  
+  footer{
+  
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    }
+  
+    main.register {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 7px;
+        border-top: #000;
+    }
+    
+    main.register form {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        max-width: 800px; /* Ancho fijo para el formulario */
+        margin: 0 auto; /* Centrar el formulario en la página */
+        padding: 20px; /* Espaciado interno */
+    }
+    
+    main.register input {
+        width: 100%; /* El ancho ahora será el 100% del contenedor */
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    
+    main.register label {
+        margin-top: 10px;
+    }
+    .interests{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }

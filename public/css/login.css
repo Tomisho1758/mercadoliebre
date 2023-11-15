@@ -1,0 +1,341 @@
+/* Estilos generales */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-style: groove;
+    border-color: aqua;
+}
+
+/* Estilos para diferentes tamaños de pantalla */
+@media (max-width: 360px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 361px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 60%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+/* Estilos para el formulario */
+.login {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: calc();
+    border-color: #000;
+}
+
+.login form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.login input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la barra de navegación y encabezado */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5%;
+    width: 100%;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+header div.logo,
+header .form {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+/* Estilos responsivos específicos */
+@media (max-width: 360px) {
+    .contfooter {
+        display: flex;
+        flex-direction: column;
+    }
+    div.top-header {
+        flex-wrap: wrap;
+    }
+    nav {
+        display: none;
+    }
+    header .form .input {
+        background-color: #FFF;
+        border: 1px solid #000;
+        outline: none;
+        color: #666;
+        padding: 2px;
+    }
+    main section article .description {
+        display: none;
+    }
+    .fa-solid.fa-truck {
+        right: 240px;
+    }
+    .discount {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media (min-width: 361px) {
+    .contfooter {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    main section article .description {
+        display: block;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    .price,
+    .discount {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    footer {
+        
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    main section div.products article {
+        width: 22%;
+    }
+    main section article .description {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article {
+        width: 23%;
+        margin-bottom: 15px;
+    }
+    .price,
+    .discount {
+        width: 50%;
+    }
+}
+
+/* Estilos del pie de página */
+.icono {
+    font-size: 30px;
+    color: #1259c3;
+}
+
+.h4footer {
+    color: #2d2d2d;
+}
+
+.pfooter {
+    color: rgb(45, 45, 45);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fa-credit-card:before {
+    content: "\f09d";
+    display: flex;
+}
+
+.infoTjta {
+    display: flex;
+    flex-direction: column;
+}
+
+.contfooter {
+    display: flex;
+    flex-direction: row;
+}
+.enviar {
+    border-color: #1259c3;
+    background-color: #1259c3;
+    color: white;
+    display: flex;
+    width: 45%;
+    margin-left: 25%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
